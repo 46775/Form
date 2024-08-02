@@ -7,74 +7,91 @@
   color: rgb(0, 0, 0);
 }
 
-body{
-    height: 100vh;
-    background-color: white;
+body {
+  height: 110vh;
+  background-color: white;
 }
 
-H2{
+H2 {
   color: red;
 }
 
 .nav-bar {
-  background:linear-gradient(90deg, rgba(255, 0, 0, 0.337), rgba(255, 166, 0, 0.476));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.337),
+    rgba(255, 166, 0, 0.476)
+  );
   padding: 16px;
   border-bottom: 1px solid grey;
 }
 
-h3{
+h3 {
   display: inline-block;
 }
 
-button{
-  display: inline-block;
+button {
   float: right;
   padding: 4px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
-  background:linear-gradient(180deg, rgba(243, 67, 67, 0.311),  rgba(255, 214, 138, 0.459) );
+  background: linear-gradient(
+    180deg,
+    rgba(243, 67, 67, 0.311),
+    rgba(255, 214, 138, 0.459)
+  );
 }
 
-button>a{
+button > a {
   text-decoration: none;
-  padding: 5PX;
+  padding: 5px;
   color: rgb(41, 41, 41);
 }
 
-button:hover{
+button:hover {
   box-shadow: 0px 1px 5px black;
-  transition: .8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
-.head{
+.head {
   text-align: center;
 }
 
-.head>p{
+.head > p {
   text-align: center;
   justify-content: center;
 }
 
-.head-form{
+.head-form {
   display: grid;
   margin-top: 40px;
   margin-left: 40px;
 }
 
-.head-form>input{
+.head-form > input {
   width: 200px;
   display: inline-block;
 }
 
-.form {
+.form,
+.formOne {
+  display: flex;
+  margin-left: 22%;
+  margin-top: 3%;
+  transform: translate(-2%, 3%);
   width: 700px;
-  margin: 40px 40px;
   padding: 15px;
-  border: 2px solid black;
-  display: inline-block;
-  margin-top: 10%;
-  margin-left
-  : 15%;
+  border: 5px double rgb(0, 0, 0);
+}
+
+.formOne {
+  display: flex;
+  margin-left: 22%;
+  margin-top: 7%;
+  transform: translate(-2%, 7%);
+  width: 700px;
+  padding: 15px;
+  border: 5px double rgb(0, 0, 0);
 }
 
 input {
@@ -85,20 +102,20 @@ input {
   padding: 4px;
 }
 
-.input-details{
+.input-details {
   margin: 20px 20px;
 }
 
-input{
-  margin-bottom: 25px ;
+input {
+  margin-bottom: 25px;
 }
 
-.conditions>input{
+.conditions > input {
   width: 200px;
   display: inline-block;
 }
 
-li.conditions{
+li.conditions {
   margin: 30px auto;
 }
 
@@ -108,10 +125,13 @@ table {
   border-collapse: collapse;
   line-height: 1.2;
 }
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
 }
-th, td {
+th,
+td {
   padding: 2px;
   text-align: left;
 }
@@ -119,19 +139,31 @@ th {
   background-color: #f2f2f2;
 }
 
-.terms-conditions{
+.terms-conditions {
   font-size: small;
 }
 
-.Tconditions{
+.Tconditions {
   margin: 15px;
   line-height: 1.2;
 
   list-style-type: decimal;
 }
 
-p{
+p {
   display: flex;
-
   margin: 20px;
 }
+
+input[type="submit"]{
+  background-color: grey;
+  padding: 5px;
+  display: flex;
+  margin-left: 23%;
+  margin-top: 10%;
+  height: 50px;
+  width: 700px;
+  justify-content: center;
+  border-radius: 50px;
+}
+
