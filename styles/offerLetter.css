@@ -1,0 +1,23 @@
+body{
+  overflow: scroll;
+}
+
+.nav-bar {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.337),
+    rgba(255, 166, 0, 0.476)
+  );
+  padding: 16px;
+  border-bottom: 2px double black;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+object{
+    margin-top: 15px;
+    display: flex;
+    margin-left: 15%;
+    border-radius: 15px;
+}

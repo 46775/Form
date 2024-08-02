@@ -5,11 +5,13 @@
   font-weight: 500;
   font-style: normal;
   color: rgb(0, 0, 0);
+  overflow: hidden;
 }
 
 body {
-  height: 110vh;
+  height: 100vh;
   background-color: white;
+  overflow-y: scroll;
 }
 
 H2 {
@@ -24,6 +26,8 @@ H2 {
   );
   padding: 16px;
   border-bottom: 1px solid grey;
+display: inline-block;
+width: 100%;
 }
 
 h3 {
@@ -40,6 +44,13 @@ button {
     rgba(243, 67, 67, 0.311),
     rgba(255, 214, 138, 0.459)
   );
+  margin: 0 10px;
+}
+
+.btnS{
+  display: flex;
+  float: right;
+  margin-right: 30px;
 }
 
 button > a {
@@ -153,9 +164,10 @@ th {
 p {
   display: flex;
   margin: 20px;
+  overflow-wrap: normal;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   background-color: grey;
   padding: 5px;
   display: flex;
@@ -166,4 +178,3 @@ input[type="submit"]{
   justify-content: center;
   border-radius: 50px;
 }
-
