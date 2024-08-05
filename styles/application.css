@@ -62,7 +62,11 @@ button:hover {
 
 .content{
     display: inline-block;
-    margin-top: auto;
+    margin-top: 100px;
     margin-left: 15%;
     border: 2px double black;
+}
+
+.text{
+  margin: 24px 0px 0px 50px;
 }

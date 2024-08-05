@@ -15,7 +15,12 @@ body {
 }
 
 h3{
+  display: inline-block;
+}
+
+.text{
     display: inline-block;
+    margin: 10px 50px ;
 }
 
 .nav-bar {
@@ -64,4 +69,8 @@ object{
     display: flex;
     margin-left: 15%;
     border-radius: 15px;
+}
+
+.main-content{
+  margin-bottom: 100px;
 }
