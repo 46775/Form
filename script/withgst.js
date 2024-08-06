@@ -1,13 +1,13 @@
- const serialInput = document.getElementById('serialInput');
+async function fetchSerialNumber() {
+    try {
+        const response = await fetch('/serial');
+        const data = await response.json();
+        const serialInput = document.getElementById('serialInput');
+        serialInput.value = data.serial;
+    } catch (error) {
+        console.error('Error fetching serial number:', error);
+    }
+}
 
- function updateSerialNumber() {
-     let currentNumber = parseInt(serialInput.value, 10);
-
-     if (!isNaN(currentNumber)) {
-         serialInput.value = currentNumber + 1;
-     }
- }
-
- serialInput.addEventListener('change', updateSerialNumber);
-
- serialInput.value = 1; 
+// Fetch and display the serial number when the page loads
+window.onload = fetchSerialNumber;
