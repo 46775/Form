@@ -26,7 +26,7 @@
 
     <!-- Forms -->
     <div class="form">
-      <form id="form1">
+      <form id="form1" action="#">
         <div class="head">
           <h2>DMP Finance Services</h2>
           <hr />
@@ -34,6 +34,9 @@
         </div>
 
         <div class="head-form">
+          <!-- <label for="serialInput">Serial No: </label>
+          <input type="number" id="serial-number" disabled /> -->
+
           <div id="serial-number">Serial Number: 000001</div>
           <label for="Date">Date:</label>
           <input type="date" />
@@ -55,13 +58,17 @@
           <label>Flat Type:</label>
           <input type="text" />
 
-          <label>Basic Cost Of Flat (in Rs.):</label>
-          <input type="text" />
+          <label for="Basic Cost Of Flat (in Rs.)">
+            Basic Cost Of Flat (in Rs.):</label
+          >
+          <input type="text" name="" id="" />
 
           <label>Subsidy Amount (if Applicable to Project) (In Rs.):</label>
           <input type="number" />
 
-          <label>Mode of Payment (Cash/DD/Cheque/M.O.) (In Rs.):</label>
+          <label for="Mode of Payment (Cash/DD/Cheque/M.O.) (In Rs.)"
+            >Mode of Payment (Cash/DD/Cheque/M.O.) (In Rs.):</label
+          >
           <input type="text" />
 
           <label>DD/cheque/M.O Number:</label>
@@ -151,12 +158,11 @@
             </div>
           </div>
         </div>
-        <button type="button" onclick="printForm1()">Print Form 1</button>
       </form>
     </div>
 
     <div class="formOne">
-      <form id="form2">
+      <form id="form2" action="">
         <p>
           १) योजनेचे नाव………………………………………२) सदनिकेची अंदाजित
           किंमत……………..……..…………………… ३) PMAY योजना लागू …………….……………………४) PMAY
@@ -179,12 +185,14 @@
           भरणे 20) विजेचे मीटर स्थापित करून देणे. इत्यादी आवश्यक कामांची सेवा
           कंपनी मला पुरवणार आहे .
         </p>
+
         <p>
           अंदाजे एक सदनिकेची मूळ किंमत अर्जदाराच्या विनंती पत्रानुसार निश्चित
           केल्याप्रमाणे रुपये ……………………………आहे सध्याची अंदाजित विक्री किंमत व
           अंतिम विक्री किंमत यात बदल झाल्यास येणाऱ्या अतिरिक्त रकमेचा भरणा करणे
           अर्जदारास बंधनकारक आहे.
         </p>
+
         <p>
           अर्जदारांकडून कंपनीला जी रक्कम मिळालेली आहे त्यामध्ये गृह कर्ज बँक
           पॉलिसीनुसार इन्शुरन्स रक्कम सामाविस्ट नाही आहे. बँकेच्या गृह कर्ज
@@ -196,10 +204,12 @@
           आल्यास 90% रक्कम पूर्ण करण्यासाठी येणाऱ्या फरकाची रक्कम अर्जदाराने
           संबंधित संस्थेस भरने बंधन कारक राहील.
         </p>
+
         <p>
           या संपूर्ण प्रक्रियेला ६ महिन्याचा कालावधी लागेल परंतु अपूर्ण कागदपत्र
           व इतर काही कारणास्तव अधिक वेळ लागल्यास कंपनी जबाबदार राहणार नाही.
         </p>
+
         <p>
           जरअर्जदाराच्या सिव्हिल रेकॉर्ड आणि इतर वैयक्तिक अडचणींमुळे दस्तऐवज
           तयार होऊ शकत नसेल किंवा लागणाऱ्या गृह कर्जाची प्रक्रिया मान्य होऊ शकत
@@ -209,13 +219,16 @@
           केलेल्या रकमेतून 5% रक्कम कपात करून उर्वरित रक्कम कंपनी अर्जदारास अर्ज
           रद्द केल्याच्या तारखेपासून ४ महिन्यानी बिनव्याजी परत करण्यात येईल.
         </p>
+
         <p>
           अर्जदारास पक्की पावती हवी असल्यास गव्हर्मेंट नियमानुसार GST रकमेचा
           भरणा करणाऱ्यास नियमानुसार पावती देण्यात यईल.
         </p>
+
         <p>डी.एम.पी फायनान्स सर्विसेस,</p>
         <p>ग्राहक स्वाक्षरी तारीख:-__________</p>
       </form>
     </div>
+    <script src="/script/withgst.js"></script>
   </body>
 </html>
