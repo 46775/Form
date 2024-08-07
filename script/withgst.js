@@ -43,3 +43,6 @@ function displaySerialNumber() {
 
 // Execute the function to display the serial number when the page loads
 displaySerialNumber();
+
+
+
