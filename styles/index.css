@@ -11,7 +11,7 @@
 body {
   height: 100vh;
   background-color: white;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 .nav-bar {
@@ -83,6 +83,8 @@ p {
 img {
   float: left;
   border-radius: 15px;
+  min-width: 400px;
+  min-height: 300PX;
 }
 
 .dropbtn {

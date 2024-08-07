@@ -3,9 +3,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
   color: rgb(0, 0, 0);
-  overflow: hidden;
 }
 
 body {
@@ -18,19 +16,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-H2 {
+h2 {
   color: red;
 }
 
 .nav-bar {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 0.337),
-    rgba(255, 166, 0, 0.476)
-  );
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.337), rgba(255, 166, 0, 0.476));
   padding: 16px;
   border-bottom: 1px solid grey;
-  display: inline-block;
   width: 100%;
 }
 
@@ -43,11 +36,7 @@ button {
   padding: 4px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
-  background: linear-gradient(
-    180deg,
-    rgba(243, 67, 67, 0.311),
-    rgba(255, 214, 138, 0.459)
-  );
+  background: linear-gradient(180deg, rgba(243, 67, 67, 0.311), rgba(255, 214, 138, 0.459));
   margin: 0 10px;
 }
 
@@ -59,7 +48,6 @@ button {
 
 button > a {
   text-decoration: none;
-  padding: 5px;
   color: rgb(41, 41, 41);
 }
 
@@ -72,49 +60,23 @@ button:hover {
   text-align: center;
 }
 
-.head > p {
-  text-align: center;
-  justify-content: center;
-}
-
 .head-form {
   display: grid;
-  margin-top: 40px;
-  margin-left: 40px;
+  margin: 40px 40px 0;
 }
 
 .head-form > input {
   width: 200px;
-  display: inline-block;
 }
 
 .form,
 .formOne {
   display: flex;
-  margin-left: 22%;
-  margin-top: 3%;
-  transform: translate(-2%, 3%);
+  margin: 3% auto;
   width: 700px;
   padding: 15px;
   border: 5px double rgb(0, 0, 0);
-}
-
-.formOne {
-  display: flex;
-  margin-left: 22%;
-  margin-top: 7%;
-  transform: translate(-2%, 7%);
-  width: 700px;
-  padding: 15px;
-  border: 5px double rgb(0, 0, 0);
-}
-
-input {
-  width: 100%;
-  display: grid;
-  border: none;
-  border-bottom: 1px dashed;
-  padding: 4px;
+  transform: translateX(-2%);
 }
 
 .input-details {
@@ -122,12 +84,15 @@ input {
 }
 
 input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px dashed;
+  padding: 4px;
   margin-bottom: 25px;
 }
 
 .conditions > input {
   width: 200px;
-  display: inline-block;
 }
 
 li.conditions {
@@ -135,7 +100,6 @@ li.conditions {
 }
 
 table {
-  overflow: hidden;
   width: 100%;
   border-collapse: collapse;
   line-height: 1.2;
@@ -164,7 +128,6 @@ th {
 .Tconditions {
   margin: 15px;
   line-height: 1.2;
-
   list-style-type: decimal;
 }
 
@@ -172,73 +135,9 @@ input[type="submit"] {
   background-color: grey;
   padding: 5px;
   display: flex;
-  margin-left: 23%;
-  margin-top: 10%;
+  margin: 10% auto;
   height: 50px;
   width: 700px;
   justify-content: center;
   border-radius: 50px;
-}
-
-.main-content {
-  display: flex;
-}
-
-h4 {
-  margin: 25px 100px;
-  font-weight: 700;
-  font-size: larger;
-}
-
-p {
-  justify-content: center;
-  text-align: justify;
-  width: 700px;
-  text-wrap: wrap;
-}
-
-img {
-  float: left;
-  border-radius: 15px;
-}
-
-.dropbtn {
-  padding: 5px 20px;
-  margin: 15px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin-top: 50px;
-  margin-left: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.463);
-  border-radius: 15px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
 }
