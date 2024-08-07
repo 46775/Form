@@ -29,7 +29,7 @@ H2 {
     rgba(255, 166, 0, 0.476)
   );
   padding: 16px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(0, 0, 0);
   display: inline-block;
   width: 100%;
 }
@@ -106,6 +106,7 @@ button:hover {
 
 .formOne {
   margin-top: 0;
+  padding: 40px;
 }
 
 .input-details {
@@ -142,11 +143,11 @@ table {
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.795);
 }
 
 tr > td > input {
-  background-color: rgba(100, 100, 100, 0.212);
+  background-color: rgba(155, 155, 155, 0.404);
 }
 
 th,
@@ -168,18 +169,6 @@ th {
   margin: 5px;
   line-height: 1.2;
   list-style-type: decimal;
-}
-
-input[type="submit"] {
-  background-color: grey;
-  padding: 5px;
-  display: flex;
-  margin-left: 23%;
-  margin-top: 10%;
-  height: 50px;
-  width: 700px;
-  justify-content: center;
-  border-radius: 50px;
 }
 
 .main-content {

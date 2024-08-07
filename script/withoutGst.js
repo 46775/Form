@@ -43,3 +43,27 @@ function displaySerialNumber() {
 
 // Execute the function to display the serial number when the page loads
 displaySerialNumber();
+
+
+
+function printForm1() {
+    const formContent = document.getElementById('form1').innerHTML;
+    const printWindow = window.open('', '', 'height=800,width=800');
+    printWindow.document.write('<html><head><title>Form 1</title>');
+    printWindow.document.write('</head><body >');
+    printWindow.document.write(formContent);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    printWindow.print();
+  }
+
+  function printForm2() {
+    const formContent = document.getElementById('form2').innerHTML;
+    const printWindow = window.open('', '', 'height=800,width=800');
+    printWindow.document.write('<html><head><title>Form 2</title>');
+    printWindow.document.write('</head><body >');
+    printWindow.document.write(formContent);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    printWindow.print();
+  }
